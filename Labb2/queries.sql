@@ -21,10 +21,7 @@ GROUP BY movie_category
 HAVING COUNT(movie_nr) > 1 
 ORDER BY COUNT(movie_category) DESC;
 
---delete all movies that are in the category 'Western'
-DELETE 
-FROM movie 
-WHERE movie_category = 'Western';
+
 
 --list the stores with the most expensive movies
 SELECT * 

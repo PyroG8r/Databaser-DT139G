@@ -35,7 +35,8 @@ CREATE TABLE movie_stock_status(
     movie_nr SMALLINT NOT NULL,
     store_nr SMALLINT NOT NULL,
     movie_stock SMALLINT NOT NULL,
-    shelf_nr SMALLINT NOT NULL
+    shelf_nr SMALLINT NOT NULL,
+    movie_price INTEGER
 );
 
 CREATE TABLE reservation(
@@ -48,7 +49,6 @@ CREATE TABLE rental(
     rental_nr SMALLINT NOT NULL,
     member_nr SMALLINT NOT NULL,
     movie_nr SMALLINT NOT NULL,
-    movie_price INTEGER,
     rental_date DATE,
     return_date DATE
 );

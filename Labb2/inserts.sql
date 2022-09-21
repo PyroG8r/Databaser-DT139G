@@ -19,18 +19,18 @@ INSERT INTO movie VALUES (5, 'LOTR: The Return of the King', 201, 'Action');
 INSERT INTO member VALUES (1, 'Greger', 'Adress83', '2018-01-01', 1);
 
 --inserts into table movie_stock_status
-INSERT INTO movie_stock_status VALUES (1, 1, 5, 1); -- ( movie_nr, store_nr, movie_stock, shelf_nr)
-INSERT INTO movie_stock_status VALUES (1, 2, 0, 2);
-INSERT INTO movie_stock_status VALUES (2, 1, 2, 6);
-INSERT INTO movie_stock_status VALUES (2, 2, 4, 2);
-INSERT INTO movie_stock_status VALUES (3, 1, 1, 3);
-INSERT INTO movie_stock_status VALUES (4, 1, 0, 4);
+INSERT INTO movie_stock_status VALUES (1, 1, 5, 71, 1); -- ( movie_nr, store_nr, movie_stock, movie_price, shelf_nr)
+INSERT INTO movie_stock_status VALUES (1, 2, 0, 61, 2);
+INSERT INTO movie_stock_status VALUES (2, 1, 2, 86, 6);
+INSERT INTO movie_stock_status VALUES (2, 2, 4, 66, 2);
+INSERT INTO movie_stock_status VALUES (3, 1, 1, 59, 3);
+INSERT INTO movie_stock_status VALUES (4, 1, 0, 73, 4);
 
 --inserts into table reservation
 INSERT INTO reservation VALUES (1, 1, '2022-10-31');
 
 --inserts into table rental
-INSERT INTO rental VALUES (1, 1, 2, 50, '2022-09-20', '2022-09-30');
+INSERT INTO rental VALUES (1, 1, 2, '2022-09-20', '2022-09-30');
 
 --inserts into table director
 INSERT INTO director VALUES (1, 'Francis Ford Coppola');
