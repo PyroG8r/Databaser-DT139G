@@ -1,8 +1,12 @@
+SET foreign_key_checks = 0;
+
 --inserts into table employee
 INSERT INTO employee VALUES (1, 'Emil', 50000, NULL, 1);
 INSERT INTO employee VALUES (2, 'Jonatan', 40000, 1, 1);
 INSERT INTO employee VALUES (3, 'Ruben', 30000, 1, 1);
 INSERT INTO employee VALUES (6, 'Isak', 50000, NULL, 2);
+
+SET foreign_key_checks = 1;
 
 --inserts into table store
 INSERT INTO store VALUES (1, 'Hemmakvall', 0702746598, 'Nacksta', 'Sundsvall', 49, 85353);

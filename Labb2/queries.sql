@@ -1,3 +1,4 @@
+-- Active: 1663671139270@@127.0.0.1@3306@LABBTWO
 --All movies that are not named 'Shawshank Redemption'
 SELECT * 
 FROM movie 
