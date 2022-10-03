@@ -34,7 +34,7 @@ INSERT INTO movie_stock_status VALUES (4, 1, 0, 73, 4);
 INSERT INTO reservation VALUES (1, 1, '2022-10-31');
 
 --inserts into table rental
-INSERT INTO rental VALUES (1, 1, 2, '2022-09-20', '2022-09-30');
+INSERT INTO rental VALUES (1, 2, '2022-09-20', '2022-09-30');
 
 --inserts into table director
 INSERT INTO director VALUES (1, 'Francis Ford Coppola');

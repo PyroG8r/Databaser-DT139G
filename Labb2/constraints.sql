@@ -12,7 +12,7 @@ ALTER TABLE movie_stock_status ADD CONSTRAINT movie_stock_status_pk PRIMARY KEY 
 
 ALTER TABLE reservation ADD CONSTRAINT reservation_pk PRIMARY KEY (member_nr, movie_nr);
 
-ALTER TABLE rental ADD CONSTRAINT rental_pk PRIMARY KEY (rental_nr);
+ALTER TABLE rental ADD CONSTRAINT rental_pk PRIMARY KEY (member_nr, movie_nr, rental_date);
 
 ALTER TABLE director ADD CONSTRAINT director_pk PRIMARY KEY (movie_nr, director_name);  --alternativt UNIQUE
 

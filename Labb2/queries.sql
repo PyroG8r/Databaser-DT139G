@@ -1,4 +1,3 @@
--- Active: 1663671139270@@127.0.0.1@3306@LABBTWO
 --All movies that are not named 'Shawshank Redemption'
 SELECT * 
 FROM movie 
@@ -26,5 +25,5 @@ ORDER BY COUNT(movie_category) DESC;
 
 --list the stores with the most expensive movies
 SELECT * 
-FROM store 
-WHERE 
+FROM movie
+WHERE movie_runtime > (SELECT AVG(movie_runtime) FROM movie);
