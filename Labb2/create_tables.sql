@@ -1,5 +1,5 @@
 CREATE TABLE employee (
-    employee_nr    SMALLINT NOT NULL,
+    employee_nr    SMALLINT NOT NULL, -- smallint 2 bytes, max nr 65535
     employee_name   VARCHAR(32) NOT NULL,
     employee_salary   INTEGER,
     manager_nr    SMALLINT,
