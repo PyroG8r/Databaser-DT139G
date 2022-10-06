@@ -11,7 +11,7 @@ mysql> SELECT * FROM Restaurant;
 | 454           | Mary Doe               | Mike Myers             | NULL                   | NE                     | Northeast              |                     145 |
 | 789           | Mary Doe               | Mike Myers             | NULL                   | NE                     | Northeast              |                     678 |
 +---------------+------------------------+------------------------+------------------------+------------------------+------------------------+-------------------------+
-
+RESTAURANT_ID > OWNER1_NAME, OWNER2_NAME, OWNER3_NAME, REGION_CODE, REGION_NAME, MAX_CAPACITY
 
 mysql> SELECT * FROM Dessert;
 
@@ -27,6 +27,7 @@ mysql> SELECT * FROM Dessert;
 | EE           | Summer Refresher | Lots of different types of fruits,     | Seasonal Fruit		     |	NULL                | Cherries	    |    1.95              |
 |			   |				  | all put into a blender                 |	                     |                      |               |                      |
 +--------------+------------------+----------------------------------------+-------------------------+----------------------+---------------+----------------------+
+DESSERT_CODE > DESSERT_NAME, DESSERT_DESCR, DESSERT_CATEGORY_NAME, DRINK_NAME, TOPPNING_NAME, DESSERT_PRICE
 
 
 mysql> SELECT * FROM Bill;
@@ -40,6 +41,9 @@ mysql> SELECT * FROM Bill;
 | 77      | BOOTH_AD  | BC           | 789           | 2000-10-15 20:15:19 |     1500.99 |              80 |
 | 9       | BOOTH_BC  | AB           | 454           | 1999-10-10 22:25:09 |       310.5 |            10.5 |
 +---------+-----------+--------------+---------------+---------------------+-------------+-----------------+
+
+
+
 
 mysql> SELECT * FROM Offer;
 +--------------+----------------------------+---------------+
@@ -60,6 +64,5 @@ mysql> SELECT * FROM Booth;
 | BOOTH_AE  | 124           | Y                       |              8 | T             | Table         |
 | BOOTH_BC  | 123           | Y                       |              6 | E             | Bench         |
 +-----------+---------------+-------------------------+----------------+---------------+---------------+
-
-
-
+BOOTHCODE > RESTAURANT_ID, SMOKE_SECTION_INDICATOR, BOOTH_CAPACITY, BOOTHTYP_CODE, BOOTHTYP_TEXT
+BOOTHTYP_CODE > BOOTHTYP_CODE

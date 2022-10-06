@@ -47,9 +47,9 @@ INSERT INTO BILL VALUES ('77', 'BOOTH_AD', 'BC','789','2000-10-15 20:15:19', 150
 INSERT INTO BILL VALUES ('9', 'BOOTH_BC', 'AB','454','1999-10-10 22:25:09', 310.50, 10.50);
 
 
-SELECT *FROM Dessert;
-SELECT * FROM Bill; -- INTO outfile 'C:\\Downloads\\Bill.txt';  /*Security remark ==Don't create outfile as root  */
-SELECT *FROM Offer;
-SELECT *FROM Booth;
+SELECT *FROM DESSERT;
+SELECT * FROM BILL; -- INTO outfile 'C:\\Downloads\\Bill.txt';  /*Security remark ==Don't create outfile as root  */
+SELECT *FROM OFFER;
+SELECT *FROM BOOTH;
 SELECT *FROM RESTAURANT;
 
