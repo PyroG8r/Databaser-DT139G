@@ -51,11 +51,6 @@ HAVING COUNT(movie_nr) > 1
 ORDER BY COUNT(movie_category) DESC;
 
 
-select max(salary),  
-from employee
-GROUP BY store_nr
-
-
 --Result ^
 --+----------------+-------------+-----------------+
 --| movie_category | movie_count | cat_avg_runtime |
