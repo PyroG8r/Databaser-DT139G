@@ -14,9 +14,9 @@ ALTER TABLE reservation ADD CONSTRAINT reservation_pk PRIMARY KEY (member_nr, mo
 
 ALTER TABLE rental ADD CONSTRAINT rental_pk PRIMARY KEY (member_nr, movie_nr, rental_date);
 
-ALTER TABLE director ADD CONSTRAINT director_pk PRIMARY KEY (movie_nr, director_name);  --alternativt UNIQUE
+ALTER TABLE director ADD CONSTRAINT director_pk PRIMARY KEY (movie_nr, director_name);  
 
-ALTER TABLE actor ADD CONSTRAINT actor_pk PRIMARY KEY (movie_nr, actor_name);       --alternativt UNIQUE
+ALTER TABLE actor ADD CONSTRAINT actor_pk PRIMARY KEY (movie_nr, actor_name);      
 
 
 --Foreign keys

@@ -1,9 +1,10 @@
+-- Active: 1663671139270@@127.0.0.1@3306@LABBTWO
 --All movies that are not named 'Shawshank Redemption'
 SELECT * 
 FROM movie 
 WHERE movie_title != 'The Shawshank Redemption';
 
---Result
+--Result ^
 --+----------+------------------------------+---------------+----------------+
 --| movie_nr | movie_title                  | movie_runtime | movie_category |
 --+----------+------------------------------+---------------+----------------+
@@ -19,7 +20,7 @@ SELECT *
 FROM reservation 
 WHERE final_want_date BETWEEN '2022-10-20' AND '2022-11-01';
 
---Result
+--Result ^
 --+-----------+----------+-----------------+
 --| member_nr | movie_nr | final_want_date |
 --+-----------+----------+-----------------+
@@ -33,7 +34,7 @@ FROM movie
 WHERE movie_title LIKE 'The%t' 
 ORDER BY movie_runtime DESC;
 
---Result
+--Result ^
 --+----------+-------------------+---------------+----------------+
 --| movie_nr | movie_title       | movie_runtime | movie_category |
 --+----------+-------------------+---------------+----------------+
@@ -49,7 +50,13 @@ GROUP BY movie_category
 HAVING COUNT(movie_nr) > 1 
 ORDER BY COUNT(movie_category) DESC;
 
---Result
+
+select max(salary),  
+from employee
+GROUP BY store_nr
+
+
+--Result ^
 --+----------------+-------------+-----------------+
 --| movie_category | movie_count | cat_avg_runtime |
 --+----------------+-------------+-----------------+
@@ -63,7 +70,7 @@ SELECT *
 FROM movie
 WHERE movie_runtime > (SELECT AVG(movie_runtime) FROM movie);
 
---Result
+--Result ^
 --+----------+------------------------------+---------------+----------------+
 --| movie_nr | movie_title                  | movie_runtime | movie_category |
 --+----------+------------------------------+---------------+----------------+
@@ -76,3 +83,13 @@ WHERE movie_runtime > (SELECT AVG(movie_runtime) FROM movie);
 --increase the salary of all employees with 10%
 UPDATE employee
 SET employee_salary = employee_salary * 1.1;
+
+
+
+--list all FOREIGN KEYS
+SELECT 
+  TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME, REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
+FROM
+  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+  REFERENCED_TABLE_SCHEMA = 'LABBTWO' 
