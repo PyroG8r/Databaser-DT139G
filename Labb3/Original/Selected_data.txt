@@ -43,7 +43,7 @@ mysql> SELECT * FROM Bill;
 | 9       | BOOTH_BC  | AB           | 454           | 1999-10-10 22:25:09 |       310.5 |            10.5 |
 +---------+-----------+--------------+---------------+---------------------+-------------+-----------------+
 BILL_ID > BOOTHTYP_CODE, DESSERT_CODE, RESTAURANT_ID, BILL_DATE_AND_TIME, BILL_AMOUNT, GRATUITY_AMOUNT
-
+DESSERT_CODE, GRATUITY_AMOUNT > BILL_AMOUNT
 
 
 mysql> SELECT * FROM Offer;
@@ -66,4 +66,4 @@ mysql> SELECT * FROM Booth;
 | BOOTH_BC  | 123           | Y                       |              6 | E             | Bench         |
 +-----------+---------------+-------------------------+----------------+---------------+---------------+
 BOOTHCODE > RESTAURANT_ID, SMOKE_SECTION_INDICATOR, BOOTH_CAPACITY, BOOTHTYP_CODE, BOOTHTYP_TEXT
-BOOTHTYP_CODE > BOOTHTYP_CODE
+BOOTHTYP_CODE > BOOTHTYP_TEXT
