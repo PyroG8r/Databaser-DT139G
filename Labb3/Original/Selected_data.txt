@@ -12,6 +12,7 @@ mysql> SELECT * FROM Restaurant;
 | 789           | Mary Doe               | Mike Myers             | NULL                   | NE                     | Northeast              |                     678 |
 +---------------+------------------------+------------------------+------------------------+------------------------+------------------------+-------------------------+
 RESTAURANT_ID > OWNER1_NAME, OWNER2_NAME, OWNER3_NAME, REGION_CODE, REGION_NAME, MAX_CAPACITY
+REGION_CODE > REGION_NAME 
 
 mysql> SELECT * FROM Dessert;
 
@@ -41,7 +42,7 @@ mysql> SELECT * FROM Bill;
 | 77      | BOOTH_AD  | BC           | 789           | 2000-10-15 20:15:19 |     1500.99 |              80 |
 | 9       | BOOTH_BC  | AB           | 454           | 1999-10-10 22:25:09 |       310.5 |            10.5 |
 +---------+-----------+--------------+---------------+---------------------+-------------+-----------------+
-
+BILL_ID > BOOTHTYP_CODE, DESSERT_CODE, RESTAURANT_ID, BILL_DATE_AND_TIME, BILL_AMOUNT, GRATUITY_AMOUNT
 
 
 
