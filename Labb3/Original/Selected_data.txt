@@ -43,7 +43,7 @@ mysql> SELECT * FROM Bill;
 | 9       | BOOTH_BC  | AB           | 454           | 1999-10-10 22:25:09 |       310.5 |            10.5 |
 +---------+-----------+--------------+---------------+---------------------+-------------+-----------------+
 BILL_ID > BOOTHTYP_CODE, DESSERT_CODE, RESTAURANT_ID, BILL_DATE_AND_TIME, BILL_AMOUNT, GRATUITY_AMOUNT
-DESSERT_CODE, GRATUITY_AMOUNT > BILL_AMOUNT
+BILL_ID > BOOTHCODE > RESTAURANT_ID -- Transitivt
 
 
 mysql> SELECT * FROM Offer;
