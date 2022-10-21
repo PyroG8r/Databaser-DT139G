@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="cDjRYbi4MRZomtElbD4I" name="Page-1">
-        <mxGraphModel dx="1741" dy="1696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1339" dy="1406" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -403,9 +403,6 @@
                 <mxCell id="170" value="Recomends" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
                     <mxGeometry x="-140" y="40" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="171" value="DrinkID" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
-                    <mxGeometry x="-560" y="-10" width="100" height="40" as="geometry"/>
-                </mxCell>
                 <mxCell id="172" value="RecomendedDrink" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
                     <mxGeometry x="-300" y="55" width="120" height="40" as="geometry"/>
                 </mxCell>
@@ -433,9 +430,9 @@
                         <mxPoint x="-490" y="185" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="178" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="171" target="176">
+                <mxCell id="178" value="" style="endArrow=none;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="176">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-680" y="-65" as="sourcePoint"/>
+                        <mxPoint x="-515.9572610309216" y="29.857536769738772" as="sourcePoint"/>
                         <mxPoint x="-520" y="-65" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
@@ -472,9 +469,6 @@
                 <mxCell id="192" value="Recomends" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
                     <mxGeometry x="-70" y="140" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="193" value="ToppingID" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
-                    <mxGeometry x="-680" y="135" width="100" height="40" as="geometry"/>
-                </mxCell>
                 <mxCell id="194" value="RecomendedTop" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
                     <mxGeometry x="-230" y="155" width="110" height="40" as="geometry"/>
                 </mxCell>
@@ -502,9 +496,9 @@
                         <mxPoint x="-420" y="285" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="200" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.019;entryY=0.399;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="193" target="198">
+                <mxCell id="200" value="" style="endArrow=none;html=1;rounded=0;entryX=-0.019;entryY=0.399;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="198">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="-620" y="130" as="sourcePoint"/>
+                        <mxPoint x="-585.7704165272493" y="164.32732712690654" as="sourcePoint"/>
                         <mxPoint x="-460" y="130" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
@@ -564,6 +558,12 @@
                         <mxPoint x="710" y="170" as="sourcePoint"/>
                         <mxPoint x="870" y="170" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="241" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;DrinkID&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="-570" y="-10" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="242" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;ToppingID&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+                    <mxGeometry x="-660" y="130" width="100" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
